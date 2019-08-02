@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>reMRKable Dev</title>
+
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu">
+
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/edd7a86db6.js"></script>
+</head>
+
+<body class="site-container">
+    <header class="hero ">
+        <nav class="navbar" id="js-stickyNav">
+            <!--             <span class="logo"><a href="#">reMRKable Dev</a></span>
+ -->
+            <div class="hamburger-container hamburger-toggle" onclick="menuChange(this)" id="js-hamburgerToggle">
+                <div class=" hamburger_row1"></div>
+                <div class="hamburger_row2"></div>
+                <div class="hamburger_row3"></div>
+            </div>
+
+            <div class="logo"><a href="#">reMRKable Dev</a></div>
+
+            <ul class="nav-items" id="js-navItems">
+                <li><a href="#home" class="nav-links" id=1>Home</a></li>
+                <li><a href="#about" class="nav-links" id=2>About</a></li>
+                <li><a href="#portfolio" class="nav-links" id=3>Portfolio</a></li>
+                <li><a href="#contact" class="nav-links" id=4>Contact</a></li>
+            </ul>
+        </nav>
+        <section class="flex-row header-information-container" id=home>
+            <article class="flex-reverse-column flex-center-content">
+                <header class="above-fold-heading">
+                    <h1 class="dev-title">Full Stack Developer</h1>
+                    <p>My name is <span>Malcolm R. Kente</span>.</p>
+                    <p>I create everything from websites to rich interactive web apps.</p>
+                    <p>Do you need help with your current project?</p>
+                    <button>Get In Touch</button>
+                </header>
+                <div class="hero-logo-container">
+                    <img class="hero-logo" src="/img/white-logo-nobg.png" alt="reMRKable logo">
+                </div>
+            </article>
+        </section>
+    </header>
+
+    <main class="site-content">
+        <section class="skillset flex-row" id=about>
+            <article class="flex-column">
+                <header>
+                    <h1>A bit about myself</h1>
+                </header>
+
+                <figure class="mrk-avatar-container">
+                    <img src="/img//reMRKabledev-avatar.png" alt="avatar" class="mrk-avatar">
+                </figure>
+
+                <ul>
+                    <li>Music enthusiast and coffee lover.</li>
+                    <li>Done remote work for divers businesses.</li>
+                    <li>Experienced in team-oriented environments.</li>
+                </ul>
+            </article>
+            <section class="flex-row flex-center-content">
+                <article class="skillset-container flex-column">
+                    <header class="skill-header-container flex-center-content">
+                        <h2>Frontend</h2>
+                        <figure class="skill-icon-container">
+                            <svg viewBox="0 -45 512 512" class="skill-icon" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m501.960938 0h-491.921876c-5.542968 0-10.039062 4.496094-10.039062 10.039062v401.839844c0 5.542969 4.496094 10.039063 10.039062 10.039063h376.6875c5.542969 0 10.039063-4.496094 10.039063-10.039063 0-5.542968-4.496094-10.039062-10.039063-10.039062h-366.648437v-289.546875h471.84375v289.546875h-24.832031c-5.542969 0-10.039063 4.496094-10.039063 10.039062 0 5.542969 4.496094 10.039063 10.039063 10.039063h34.871094c5.542968 0 10.039062-4.496094 10.039062-10.039063v-401.839844c0-5.542968-4.496094-10.039062-10.039062-10.039062zm-481.882813 92.214844v-72.136719h471.84375v72.136719zm0 0" />
+                                <path
+                                    d="m93.433594 52.308594c-1.652344-4.003906-5.847656-6.554688-10.164063-6.160156-4.078125.371093-7.585937 3.265624-8.738281 7.191406-1.175781 4.03125.375 8.523437 3.792969 10.964844 3.34375 2.390624 7.914062 2.476562 11.351562.226562 3.980469-2.601562 5.574219-7.828125 3.757813-12.222656zm0 0" />
+                                <path
+                                    d="m53.175781 52.308594c-1.628906-3.945313-5.722656-6.484375-9.976562-6.171875-4.15625.300781-7.753907 3.210937-8.921875 7.203125-1.148438 3.917968.28125 8.285156 3.523437 10.769531 3.375 2.582031 8.144531 2.742187 11.683594.382813 3.929687-2.617188 5.496094-7.820313 3.691406-12.183594zm0 0" />
+                                <path
+                                    d="m134.273438 54.183594c-.835938-4.128906-4.238282-7.359375-8.410157-7.96875-4.191406-.613282-8.433593 1.578125-10.355469 5.34375-1.914062 3.742187-1.273437 8.367187 1.59375 11.445312 2.824219 3.027344 7.351563 3.988282 11.171876 2.414063 4.347656-1.792969 6.9375-6.617188 6-11.234375zm0 0" />
+                                <path
+                                    d="m302.410156 324.257812c1.921875 1.75 4.339844 2.613282 6.75 2.613282 2.730469 0 5.449219-1.105469 7.429688-3.28125l54.367187-59.769532c3.429688-3.769531 3.488281-9.515624.132813-13.355468l-52.191406-59.769532c-3.648438-4.175781-9.988282-4.605468-14.164063-.957031-4.175781 3.644531-4.605469 9.988281-.957031 14.164063l46.304687 53.027344-48.34375 53.148437c-3.730469 4.101563-3.433593 10.449219.671875 14.179687zm0 0" />
+                                <path
+                                    d="m209.589844 189.871094c-4.097656-3.730469-10.449219-3.429688-14.179688.671875l-54.367187 59.769531c-3.429688 3.769531-3.488281 9.515625-.132813 13.359375l52.191406 59.765625c1.984376 2.273438 4.765626 3.433594 7.5625 3.433594 2.34375 0 4.699219-.8125 6.601563-2.476563 4.175781-3.648437 4.605469-9.988281.957031-14.164062l-46.304687-53.027344 48.34375-53.148437c3.730469-4.101563 3.433593-10.449219-.671875-14.183594zm0 0" />
+                                <path
+                                    d="m266.917969 193.816406-44.1875 119.535156c-1.921875 5.203126.734375 10.976563 5.933593 12.898438 1.148438.425781 2.324219.625 3.480469.625 4.082031 0 7.921875-2.507812 9.417969-6.558594l44.191406-119.535156c1.921875-5.203125-.734375-10.976562-5.9375-12.898438-5.199218-1.921874-10.972656.734376-12.898437 5.933594zm0 0" />
+                                <path
+                                    d="m436.101562 407.964844c-1.628906-3.945313-5.71875-6.480469-9.984374-6.171875-4.226563.308593-7.871094 3.335937-8.976563 7.417969-1.082031 3.980468.488281 8.367187 3.851563 10.757812 3.402343 2.417969 8.023437 2.480469 11.484374.144531 3.902344-2.640625 5.417969-7.808593 3.625-12.148437zm0 0" />
+                            </svg>
+                            <!-- <div>Icons made by <a href="https://www.freepik.com/?__hstc=57440181.0da53485336775e1e7132ef16b95aa19.1563178059567.1563278141620.1563282292987.4&__hssc=57440181.3.1563282292987&__hsfp=2292434412" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+                        </figure>
+                    </header>
+
+                    <p>I enjoy coding from scratch and bringing ideas to life in the browser.</p>
+
+                    <h3>What I Know</h3>
+
+                    <ul>
+                        <li>Html & Css</li>
+                        <li>JavaScript</li>
+                        <li>SaSS / SCSS</li>
+                        <li>React.js</li>
+                        <li>jQuery</li>
+                        <li>EJS</li>
+                    </ul>
+                </article>
+                <article class="skillset-container flex-column">
+                    <header class="skill-header-container flex-center-content">
+                        <h2>Backend</h2>
+                        <figure class="skill-icon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="skill-icon">
+                                <g id="Outline">
+                                    <path
+                                        d="M48.16,44.4l-2.244,1.3A8,8,0,0,0,44,44.587V42H38v2.587a8,8,0,0,0-1.916,1.11L36,45.649V40c0-2.748-5.7-4-11-4s-11,1.252-11,4V58c0,2.748,5.7,4,11,4,5.045,0,10.445-1.138,10.95-3.62l.134-.077A8,8,0,0,0,38,59.413V62h6V59.413a8,8,0,0,0,1.916-1.11l2.244,1.3,3-5.2-2.241-1.294a7.605,7.605,0,0,0,0-2.214L51.16,49.6Zm-14.32,0-1.481,2.565A23.119,23.119,0,0,1,25,48c-5.851,0-8.85-1.46-9-2V42.433c.014.007.031.012.045.019q.361.178.773.335c.073.028.153.053.229.081.212.076.43.149.657.217.108.032.217.062.328.092q.325.09.667.169c.109.026.217.052.328.075q.428.092.874.168l.168.031q.534.087,1.09.154l.32.034c.271.03.543.057.819.079.129.011.258.021.388.03.269.018.539.034.81.046l.355.016c.384.013.767.021,1.149.021s.765-.008,1.149-.021l.355-.016c.271-.012.541-.028.81-.046.13-.009.259-.019.388-.03.276-.022.548-.049.819-.079l.32-.034q.555-.068,1.09-.154l.168-.031q.447-.077.874-.168c.111-.023.219-.049.328-.075q.342-.079.667-.169c.111-.03.22-.06.328-.092.227-.068.445-.141.657-.217.076-.028.156-.053.229-.081q.411-.156.773-.335c.014-.007.031-.012.045-.019v2.061ZM25,38c.364,0,.717.006,1.06.016.121,0,.233.012.352.017.215.009.432.017.638.03.169.011.327.026.49.039.145.012.3.022.435.035.2.019.382.042.569.064.095.012.2.021.287.033.246.032.479.068.707.1l.08.011c2.776.461,4.234,1.258,4.377,1.647a.343.343,0,0,1-.026.05.433.433,0,0,1-.038.062c-.015.018-.037.037-.055.056s-.047.05-.079.077-.051.038-.076.057-.076.058-.123.089c-.029.019-.066.039-.1.059-.053.032-.1.064-.166.1-.037.02-.082.04-.121.06-.068.035-.134.069-.211.1l-.141.06c-.083.035-.164.071-.256.107-.051.02-.11.04-.164.06-.1.036-.193.072-.3.107-.062.021-.132.041-.2.062-.109.034-.215.069-.332.1-.075.022-.158.042-.236.063-.118.032-.234.064-.36.095-.089.022-.187.042-.28.063-.125.029-.247.058-.379.085-.107.022-.223.041-.335.062-.13.024-.257.05-.393.072s-.262.039-.393.059-.26.041-.4.059-.3.035-.454.052c-.136.015-.267.032-.407.046-.17.016-.351.028-.528.042-.133.01-.26.023-.4.032-.223.014-.457.023-.691.032-.1,0-.2.011-.3.015-.343.01-.7.016-1.06.016-.731,0-1.418-.023-2.06-.064-4.48-.286-6.791-1.455-6.937-1.931C16.183,39.445,19.179,38,25,38ZM16,48.427C18.127,49.5,21.642,50,25,50a29.432,29.432,0,0,0,5.934-.564l-.094.163,2.241,1.294A7.739,7.739,0,0,0,33,52c0,.225.029.456.05.685A20.442,20.442,0,0,1,25,54c-5.851,0-8.85-1.46-9-2h0ZM16,58V54.433C18.129,55.5,21.646,56,25,56a28.431,28.431,0,0,0,6.376-.671l1.878,3.255C32.023,59.22,29.277,60,25,60,19.149,60,16.15,58.54,16,58Zm30.831-7.389a5.793,5.793,0,0,1,0,2.778l-.171.724,1.768,1.021-1,1.732-1.769-1.021-.542.51a6.014,6.014,0,0,1-2.4,1.393L42,57.96V60H40V57.96l-.715-.212a6.014,6.014,0,0,1-2.4-1.393l-.542-.51-1.769,1.021-1-1.732,1.768-1.021-.171-.724a5.793,5.793,0,0,1,0-2.778l.171-.724-1.768-1.021,1-1.732,1.769,1.021.542-.51a6.014,6.014,0,0,1,2.4-1.393L40,46.04V44h2v2.04l.715.212a6.014,6.014,0,0,1,2.4,1.393l.542.51,1.769-1.021,1,1.732L46.66,49.887Z" />
+                                    <path
+                                        d="M41,48a4,4,0,1,0,4,4A4,4,0,0,0,41,48Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,41,54Z" />
+                                    <path d="M38,2H26V22H38ZM36,4V16H28V4ZM32,20H28V18h8v2Z" />
+                                    <path
+                                        d="M33,19a1.05,1.05,0,0,0-.29-.71,1.018,1.018,0,0,0-.91-.27.636.636,0,0,0-.18.06.782.782,0,0,0-.181.09,1.7,1.7,0,0,0-.149.12A1.045,1.045,0,0,0,31,19a1,1,0,1,0,2,0Z" />
+                                    <polygon
+                                        points="13 24 11 24 11 30 31 30 31 34 33 34 33 30 53 30 53 24 51 24 51 28 33 28 33 24 31 24 31 28 13 28 13 24" />
+                                    <path
+                                        d="M8,20H6v2H18V20H16V18h6V2H2V18H8Zm6,0H10V18h4ZM4,4H20v8H4ZM4,16V14H20v2Z" />
+                                    <path d="M42,22H62V2H42Zm18-2H44V10H60ZM44,4H60V8H44Z" />
+                                    <path
+                                        d="M46.55,5.17a.568.568,0,0,0-.17-.09.609.609,0,0,0-.191-.06,1,1,0,0,0-.9.27,1.032,1.032,0,0,0-.21.33.99.99,0,0,0,.21,1.09,1.155,1.155,0,0,0,.33.21.942.942,0,0,0,.76,0,1.169,1.169,0,0,0,.33-.21A.994.994,0,0,0,47,6a1.05,1.05,0,0,0-.29-.71A1,1,0,0,0,46.55,5.17Z" />
+                                    <path
+                                        d="M49.71,5.29a1.047,1.047,0,0,0-1.42,0,1.032,1.032,0,0,0-.21.33A1,1,0,0,0,48,6a.838.838,0,0,0,.08.38,1.169,1.169,0,0,0,.21.33.99.99,0,0,0,1.09.21,1.169,1.169,0,0,0,.33-.21,1.169,1.169,0,0,0,.21-.33.942.942,0,0,0,0-.76A1.155,1.155,0,0,0,49.71,5.29Z" />
+                                    <path
+                                        d="M52.71,5.29a1.169,1.169,0,0,0-.33-.21.949.949,0,0,0-.58-.06.636.636,0,0,0-.18.06.782.782,0,0,0-.181.09,1.7,1.7,0,0,0-.149.12.933.933,0,0,0-.21.33.943.943,0,0,0,0,.76,1.169,1.169,0,0,0,.21.33,1.155,1.155,0,0,0,.33.21A1,1,0,0,0,52,7a1.033,1.033,0,0,0,.71-.29,1.169,1.169,0,0,0,.21-.33.942.942,0,0,0,0-.76A.933.933,0,0,0,52.71,5.29Z" />
+                                </g>
+                            </svg>
+                            <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/mynamepong" title="mynamepong">mynamepong</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+                        </figure>
+                    </header>
+
+                    <p>I value creating solid, secure, and functional logic for web applications.</p>
+
+                    <h3>What I Know</h3>
+
+                    <ul>
+                        <li>APIs</li>
+                        <li>Node.js</li>
+                        <li>Testing</li>
+                        <li>Express.js</li>
+                        <li>Restful Routing</li>
+                        <li>Relational Databases: SQL</li>
+                    </ul>
+                </article>
+                <article class="skillset-container flex-column">
+                    <header class="skill-header-container flex-center-content">
+                        <h2>Additional</h2>
+                        <figure class="skill-icon-container">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496 496"
+                                style="enable-background:new 0 0 496 496;" xml:space="preserve" class="skill-icon">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M112.68,260c-8.16,0-15.824,4.344-20,11.32l-12.04,20.072l-0.64-1.28v-24.696l26.008-10.408
+				C114.504,251.616,120,243.512,120,234.36c0-7.152-3.472-13.896-9.264-18.072c-5.808-4.168-13.312-5.288-20.08-3.008l-2.832,0.952
+				l3.232-6.464C94.288,201.296,96,194.056,96,186.832C96,174.24,85.76,164,73.168,164c-8.704,0-16.52,4.832-20.424,12.624
+				l-19.896,39.8L16.16,298.432L16,404l6.28,32H0v56h120v-56H96v-53.576l14.656-21.984l21.792-57.504
+				c2.36-6.296,3.552-12.896,3.552-19.616C136,270.464,125.536,260,112.68,260z M95.768,228.44c1.92-0.64,3.976-0.336,5.632,0.848
+				c1.656,1.184,2.6,3.032,2.6,5.072c0,2.568-1.536,4.832-3.92,5.792L80,248.184v-14.44L95.768,228.44z M104,452v24H16v-24H104z
+				 M117.464,297.312L96.84,352.328L80,377.576V436H38.56L32,403.208V300.792l15.632-78.168l19.424-38.832
+				c1.16-2.344,3.504-3.792,6.112-3.792c3.76,0,6.832,3.072,6.832,6.832c0,4.752-1.128,9.52-3.256,13.792L64,226.112v67.784
+				l15.36,30.72l27.04-45.064c1.312-2.192,3.72-3.552,6.28-3.552c4.04,0,7.32,3.28,7.32,7.32
+				C120,288.12,119.152,292.832,117.464,297.312z" />
+                                            <path d="M473.76,436l6.088-30.432L480,300l-16.16-81.568l-20.584-41.808C439.36,168.832,431.536,164,422.832,164
+				C410.24,164,400,174.24,400,186.832c0,7.216,1.712,14.464,4.944,20.944l3.224,6.448l-2.824-0.952
+				c-6.76-2.288-14.272-1.16-20.08,3.008c-5.792,4.184-9.264,10.928-9.264,18.08c0,9.16,5.496,17.256,13.984,20.648L416,265.416
+				v24.696l-0.64,1.28l-12.04-20.064c-4.176-6.984-11.84-11.328-20-11.328c-12.856,0-23.32,10.464-23.32,23.32
+				c0,6.72,1.192,13.32,3.552,19.616l20.952,55.872L400,382.424V436h-24v56h120v-56H473.76z M395.912,240.152
+				c-2.376-0.96-3.912-3.224-3.912-5.792c0-2.04,0.944-3.88,2.6-5.072c1.656-1.192,3.696-1.496,5.632-0.848L416,233.744v14.44
+				L395.912,240.152z M399.168,352.328l-20.624-55.016c-1.696-4.48-2.544-9.192-2.544-13.992c0-4.04,3.28-7.32,7.32-7.32
+				c2.56,0,4.968,1.36,6.28,3.552l27.04,45.056l15.36-30.72v-67.784l-12.744-25.48c-2.128-4.264-3.256-9.04-3.256-13.792
+				c0-3.76,3.072-6.832,6.832-6.832c2.6,0,4.944,1.448,6.112,3.784l19.424,38.832L464,300.792v102.424L457.44,436H416v-58.424
+				L399.168,352.328z M480,476h-88v-24h88V476z" />
+                                            <path d="M349.112,148H368v-48h-18.888c-2.552-10.848-6.784-21.08-12.632-30.528l13.344-13.352l-33.936-33.936l-13.36,13.336
+				c-9.456-5.848-19.68-10.08-30.528-12.632V4h-48v18.888c-10.848,2.552-21.08,6.784-30.528,12.632L180.12,22.176l-33.936,33.936
+				l13.344,13.352c-5.848,9.456-10.08,19.68-12.632,30.528H128v48h18.888c2.552,10.848,6.784,21.08,12.632,30.528l-13.344,13.352
+				l33.936,33.936l12.256-12.256c-0.096,0.808-0.248,1.6-0.248,2.432c0,7.12,3.76,13.328,9.368,16.88
+				c-0.848,2.224-1.368,4.608-1.368,7.12c0,11.032,8.968,20,20,20h56c11.032,0,20-8.968,20-20c0-2.52-0.52-4.904-1.368-7.12
+				c5.608-3.544,9.368-9.76,9.368-16.88c0-0.736-0.136-1.44-0.216-2.152l11.976,11.976l33.936-33.936l-13.344-13.352
+				C342.328,169.08,346.552,158.848,349.112,148z M276.128,244h-56c-2.2,0-4-1.8-4-4s1.8-4,4-4h56c2.2,0,4,1.8,4,4
+				S278.328,244,276.128,244z M284.128,220h-8h-56h-8c-2.2,0-4-1.8-4-4s1.8-4,4-4h72c2.2,0,4,1.8,4,4S286.328,220,284.128,220z
+				 M256.128,146.528c9.288-3.312,16-12.112,16-22.528c0-13.232-10.768-24-24-24s-24,10.768-24,24c0,10.416,6.712,19.216,16,22.528
+				V196h-16v-21.24l-3.992-2.312C202.864,162.44,192.128,143.88,192.128,124c0-30.872,25.128-56,56-56s56,25.128,56,56
+				c0,19.872-10.736,38.44-28.008,48.448l-3.992,2.312V196h-16V146.528z M248.128,132c-4.416,0-8-3.584-8-8s3.584-8,8-8
+				c4.416,0,8,3.584,8,8S252.544,132,248.128,132z M334.672,138.672c-2.216,13.2-7.264,25.4-14.992,36.248l-3.92,5.504l11.44,11.456
+				l-11.312,11.312l-11.456-11.456l-5.512,3.928c-1.464,1.04-3.064,2.08-4.776,3.112c-1.848-1.08-3.848-1.944-6.016-2.384v-12.6
+				c19.848-13.304,32-35.808,32-59.808c0-39.704-32.296-72-72-72c-39.704,0-72,32.296-72,72c0,23.992,12.152,46.496,32,59.8v12.608
+				c-2.216,0.448-4.256,1.336-6.144,2.456c-1.744-1.056-3.392-2.112-4.896-3.184l-5.512-3.928l-11.456,11.456l-11.312-11.312
+				l11.44-11.456l-3.92-5.504c-7.728-10.848-12.776-23.048-14.992-36.248L160.2,132H144v-16h16.2l1.128-6.672
+				c2.216-13.2,7.264-25.4,14.992-36.248l3.92-5.504L168.8,56.12l11.312-11.312l11.456,11.44l5.504-3.92
+				C207.92,44.6,220.12,39.552,233.32,37.336L240,36.2V20h16v16.2l6.672,1.128c13.2,2.216,25.4,7.264,36.248,14.992l5.504,3.92
+				L315.88,44.8l11.312,11.312l-11.44,11.456l3.92,5.504c7.728,10.848,12.776,23.048,14.992,36.248L335.8,116H352v16h-16.2
+				L334.672,138.672z" />
+                                            <rect x="240" y="276" width="16" height="16" />
+                                            <rect x="240" y="308" width="16" height="16" />
+                                            <rect x="240" y="340" width="16" height="16" />
+                                            <rect x="240" y="372" width="16" height="16" />
+                                        </g>
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+                            <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+                        </figure>
+                    </header>
+
+                    <p>I appreciate improving and enhancing digital identities with proper tools.</p>
+
+                    <h3>What I Know</h3>
+
+                    <ul>
+                        <li>Wordpress Development</li>
+                        <li>Project Management</li>
+                        <li>SEO Optimization</li>
+                        <li>Scrum (Agile)</li>
+                        <li>Coaching</li>
+                        <li>Git</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+        <section class="portfolio flex-row" id=portfolio>
+            <article class="flex-column">
+                <header>
+                    <h1>Projects I've done</h1>
+                </header>
+
+                <ul>
+                    <li>I've worked on various projects.</li>
+                    <li>Creating functional software solutions.</li>
+                    <li>Enhancing online presence & improving digitial communication.</li>
+                </ul>
+            </article>
+            <section class="flex-row">
+                <section class="portfolio-scrolling-wrapper">
+                    <article class="card">
+                        <header>
+                            <figure>
+                                <img src="/img/projects/befit-mockup.png" alt="portfolio">
+                                <figcaption>
+                                    <h2>Be Fit And Sensual</h2>
+                                </figcaption>
+                            </figure>
+                        </header>
+                        <p>An online platform for dance specific training dedicated to dancers.</p>
+                        <a href="#" class="flex-center-content"><button>View Project</button></a>
+                    </article>
+                    <article class="card">
+                        <header>
+                            <figure>
+                                <img src="/img/projects/projektdirekt-mockup.png" alt="portfolio">
+                                <figcaption>
+                                    <h2>ProjektDirekt</h2>
+                                </figcaption>
+                            </figure>
+                        </header>
+                        <p>A portfolio website that features the workshop services provided by ProjektDirekt.
+                        </p>
+                        <a href="#" class="flex-center-content"><button>View Project</button></a>
+                    </article>
+                    <article class="card">
+                        <header>
+                            <figure>
+                                <img src="/img/projects/fusefam-mockup.png" alt="portfolio">
+                                <figcaption>
+                                    <h2>Fuse Fam Dance Crew</h2>
+                                </figcaption>
+                            </figure>
+                        </header>
+                        <p>A portfolio website for the dance group Fuse Fam from Gothenburg, Sweden.
+                        </p>
+                        <a href="#" class="flex-center-content"><button>View Project</button></a>
+                    </article>
+                    <article class="card">
+                        <header>
+                            <figure>
+                                <img src="/img/projects/roadmap-mockup.png" alt="portfolio">
+                                <figcaption>
+                                    <h2>Full Stack Developer Roadmap</h2>
+                                </figcaption>
+                            </figure>
+                        </header>
+                        <p> A roadmap of the required skills needed for a full-stack developer. </p>
+                        <a href="#" class="flex-center-content"><button>View Project</button></a>
+                    </article>
+                </section>
+                <section class="more-projects-container flex-center-content">
+                    <a href="https://github.com/reMRKableDev">
+                        <p>Check out more projects on GitHub</p>
+                        <figure class="github-icon-container "> <svg version="1.1" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 536.11 536.11" style="enable-background:new 0 0 536.11 536.11;"
+                                xml:space="preserve" class="github-icon">
+                                <g>
+                                    <g>
+                                        <path d="M267.75,0c37.128,0,71.91,7.038,104.345,21.114c32.439,14.076,60.793,33.252,85.068,57.528
+			c24.277,24.276,43.453,52.632,57.529,85.068c14.072,32.436,21.111,67.218,21.111,104.346c0,37.127-7.039,71.911-21.111,104.346
+			c-14.076,32.438-33.252,60.791-57.529,85.068c-24.275,24.275-52.631,43.451-85.068,57.527
+			c-32.436,14.076-67.217,21.113-104.345,21.113s-71.91-7.037-104.346-21.111c-32.436-14.076-60.792-33.252-85.068-57.527
+			c-24.276-24.277-43.35-52.633-57.222-85.068C7.242,339.967,0.306,305.184,0.306,268.056s6.936-71.91,20.808-104.346
+			s32.946-60.792,57.222-85.068s52.632-43.452,85.068-57.528S230.622,0,267.75,0z M267.75,29.376
+			c-33.048,0-64.056,6.222-93.024,18.666S120.462,77.52,98.838,99.144s-38.658,46.92-51.102,75.888S29.07,235.008,29.07,268.056
+			c0,33.047,6.222,64.055,18.666,93.024c12.444,28.969,29.478,54.264,51.102,75.889c21.624,21.623,46.92,38.658,75.888,51.102
+			c28.968,12.443,59.976,18.666,93.024,18.666s64.056-6.223,93.025-18.666c28.967-12.441,54.264-29.479,75.887-51.102
+			c21.625-21.625,38.658-46.92,51.102-75.889c12.445-28.971,18.666-59.979,18.666-93.024c0-33.046-6.221-64.056-18.666-93.024
+			c-12.441-28.968-29.477-54.264-51.102-75.888c-21.623-21.624-46.92-38.658-75.887-51.102
+			C331.806,35.598,300.798,29.376,267.75,29.376z M336.294,312.121c25.703-8.979,38.555-25.908,38.555-50.797
+			c0-13.056-2.141-23.358-6.426-30.906c-4.283-7.548-11.117-13.77-20.502-18.666c-4.488-2.448-9.791-3.876-15.912-4.284
+			c-6.119-0.408-12.645-0.51-19.584-0.306c-6.936,0.204-14.277,0.612-22.031,1.224c-7.752,0.612-15.504,0.918-23.254,0.918
+			c-7.752,0-15.504-0.306-23.256-0.918s-15.096-1.02-22.032-1.224s-13.464-0.102-19.584,0.306s-11.424,1.836-15.912,4.284
+			c-9.384,4.896-16.116,11.118-20.196,18.666s-6.12,17.85-6.12,30.906c0,24.889,12.852,41.82,38.556,50.797
+			c4.488,1.223,9.384,2.445,14.688,3.672c4.488,0.813,10.098,1.631,16.83,2.445c6.732,0.816,14.586,1.227,23.562,1.227h26.927
+			c8.568,0,16.32-0.408,23.26-1.227c6.936-0.814,12.852-1.633,17.748-2.445C327.318,314.568,332.214,313.344,336.294,312.121z
+			 M409.734,223.38c0,13.056-1.43,25.398-4.283,37.026c-2.857,11.625-8.16,22.135-15.912,31.518
+			c-7.752,9.385-18.463,17.137-32.131,23.256c-13.668,6.121-31.109,9.996-52.326,11.629c3.264,1.631,7.447,3.672,12.547,6.119
+			c5.1,2.449,9.486,7.141,13.158,14.076c2.039,4.486,3.365,11.016,3.977,19.584c0.613,8.566,0.918,17.34,0.918,26.314
+			c0,8.979-0.102,17.238-0.305,24.785c-0.205,7.549,0.102,12.141,0.918,13.771c1.631,3.264,3.979,6.119,7.037,8.566
+			c3.061,2.447,5.611,4.283,7.65,5.508c2.039,1.227,2.65,2.756,1.836,4.592c-0.816,1.836-3.672,2.959-8.568,3.363
+			c-2.447,0-5.508-0.404-9.18-1.223c-3.672-0.816-7.143-2.244-10.404-4.285c-3.262-2.039-6.018-4.59-8.262-7.646
+			c-2.244-3.063-3.365-7.039-3.365-11.938v-50.184c0-5.711-1.326-9.791-3.98-12.24c-2.648-2.447-5.402-4.08-8.262-4.895v66.096
+			c0,11.832,1.428,19.584,4.285,23.256c1.223,1.633,2.346,3.367,3.365,5.203s1.633,3.365,1.836,4.59
+			c0.205,1.223-0.51,1.938-2.145,2.143c-1.631,0.203-4.689-0.307-9.18-1.529c-8.568-2.039-14.688-6.732-18.359-14.076
+			s-5.508-15.096-5.508-23.256v-64.871h-13.461v64.871c0,8.16-1.734,15.912-5.202,23.256s-9.69,12.037-18.666,14.076
+			c-4.488,1.225-7.446,1.732-8.874,1.529c-1.428-0.203-2.142-0.92-2.142-2.143c0-1.225,0.612-2.754,1.836-4.59
+			s2.448-3.57,3.672-5.203c0.816-1.631,1.734-4.488,2.754-8.568c1.02-4.078,1.53-8.975,1.53-14.688v-66.096
+			c-2.856,0.814-5.508,2.445-7.956,4.896c-2.448,2.447-3.672,6.527-3.672,12.24v50.184c0,4.896-1.122,8.873-3.366,11.936
+			c-2.244,3.061-4.998,5.607-8.262,7.648c-3.264,2.039-6.732,3.471-10.404,4.283c-3.672,0.816-6.732,1.225-9.18,1.225
+			c-4.896-0.406-7.752-1.527-8.568-3.363s-0.204-3.367,1.836-4.59c2.04-1.227,4.59-3.063,7.65-5.512
+			c3.06-2.445,5.406-5.303,7.038-8.564c0.816-2.041,1.122-7.447,0.918-16.221c-0.204-8.771-0.306-18.463-0.306-29.068
+			c-3.264,1.225-7.548,2.041-12.852,2.449c-5.304,0.404-11.22,0-17.748-1.227c-11.016-2.041-19.38-5.607-25.092-10.711
+			c-5.712-5.1-11.22-13.158-16.524-24.174c-2.856-5.303-6.018-9.689-9.486-13.158c-3.468-3.467-6.528-6.221-9.18-8.262
+			c-2.652-2.039-4.692-3.773-6.12-5.201c-1.428-1.428-1.53-2.754-0.306-3.979c2.448-2.855,5.814-4.08,10.098-3.674
+			c4.284,0.408,6.834,1.021,7.65,1.836c4.896,2.039,9.792,6.324,14.688,12.854c4.896,6.531,9.996,12.037,15.3,16.523
+			c2.448,2.039,5.508,4.078,9.18,6.119c3.672,2.039,7.752,3.471,12.24,4.283c4.488,0.816,9.384,0.816,14.688,0
+			c5.304-0.813,10.608-3.059,15.912-6.729c1.224-5.307,3.162-9.486,5.814-12.549c2.652-3.061,5.508-5.508,8.568-7.344
+			c3.06-1.836,5.916-3.264,8.568-4.285c2.652-1.02,4.794-1.938,6.426-2.754c-22.44-1.631-40.8-5.402-55.08-11.318
+			s-25.602-13.467-33.966-22.646c-8.364-9.18-14.076-19.686-17.136-31.519c-3.06-11.832-4.59-24.276-4.59-37.332
+			c0-13.464,2.04-25.5,6.12-36.108s9.792-19.992,17.136-28.152c-3.264-9.792-4.386-20.094-3.366-30.906s3.162-20.502,6.426-29.07
+			c15.504,0.816,28.458,4.08,38.862,9.792c10.404,5.712,17.646,10.404,21.726,14.076c17.544-4.896,35.7-7.344,54.468-7.344h4.284
+			c17.543,0,34.479,2.04,50.795,6.12c4.488-3.672,11.832-8.16,22.033-13.464c10.199-5.304,22.85-8.364,37.943-9.18
+			c3.264,8.16,5.406,17.34,6.426,27.54c1.021,10.2,0.307,19.992-2.141,29.376c8.16,8.16,14.48,17.85,18.971,29.07
+			C407.49,196.35,409.734,209.1,409.734,223.38z M266.526,209.304h0.612h0.612H266.526z M345.474,257.04
+			c0,5.712-1.527,10.608-4.59,14.688c-3.061,4.08-6.834,6.119-11.322,6.119c-4.486,0-8.158-2.039-11.016-6.119
+			c-2.854-4.081-4.285-8.977-4.285-14.688s1.432-10.608,4.285-14.688c2.855-4.08,6.527-6.12,11.016-6.12s8.264,2.04,11.322,6.12
+			C343.945,246.432,345.474,251.328,345.474,257.04z M225.522,257.04c0,5.712-1.53,10.608-4.59,14.688s-6.834,6.119-11.322,6.119
+			s-8.16-2.039-11.016-6.119c-2.856-4.081-4.284-8.977-4.284-14.688s1.428-10.608,4.284-14.688s6.528-6.12,11.016-6.12
+			s8.262,2.04,11.322,6.12C223.993,246.432,225.522,251.328,225.522,257.04z" />
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg></figure>
+                        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+                    </a>
+                </section>
+            </section>
+        </section>
+        <section>
+            <h1 class="testimonial-heading">Some nice things people have said</h1>
+            <section class="flex-row">
+                <article class="testimonial-card flex-column flex-center-content">
+                    <blockquote>
+                        <p>"<em><strong>A pleasureable experience!</strong></em><br>
+                            Malcolm helped me with everything I needed to start my online membership area and
+                            online store. <br>
+                            I felt assured moving forward with my platform as he always advised the proper next
+                            steps for me to take."</p>
+                        <section class="quote">
+                            <span><strong>Sebastian Kruse,</strong> BeFit And Sensual</span>
+                            <figure>
+                                <img src="/img/seb-kruse.png" alt="Sebastian">
+                            </figure>
+                        </section>
+                    </blockquote>
+                </article>
+                <article class="testimonial-card flex-column flex-center-content">
+                    <blockquote>
+                        <p>"<em><strong>Professional, reliable, and helpful!</strong></em> <br>
+                            Working together with Malcolm has been one of the best choices in our group's
+                            online career. <br>
+                            Everything went smooth, effortless and he was always on time with tasks given to him."
+                        </p>
+                        <section class="quote flex-center-content">
+                            <span><strong>Therese Sahlin,</strong> Fuse Fam Dance Crew</span>
+                            <figure>
+                                <img src="/img/therese-sahlin.png" alt="Therese">
+                            </figure>
+                        </section>
+                    </blockquote>
+                </article>
+                <article class="testimonial-card flex-column flex-center-content">
+                    <blockquote>
+                        <p>"<em><strong>Brilliantly pays attention to detail!</strong></em><br>
+                            Malcolm helped me develop a website for my services.
+                            <br>
+                            He really brought out the best in my business and helped me present it in an
+                            easy-to-understand and interesting way."</p>
+                        <section class="quote">
+                            <span><strong>Mats Eriksson,</strong> ProjektDirekt AB</span>
+                            <figure>
+                                <img src="/img/mats-eriksson.png" alt="Mats">
+                            </figure>
+                        </section>
+                    </blockquote>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer class="flex-center-content">
+        <section class="contact-form-section flex-center-content" id=contact>
+            <section class="contact-form-container">
+                <article class="contact-form left">
+                    <header>
+                        <h2>Let's Connect</h2>
+                    </header>
+                    <p>I'm excited to hear from you!</p>
+                </article>
+                <article class="contact-form">
+                    <form id="contactform" method="POST" class="contact-form-group">
+                        <input type="text" name="name" placeholder="name">
+                        <input type="email" name="_replyto" placeholder="email">
+                        <input type="hidden" name="_subject" value="Website contact" />
+                        <textarea name="message" placeholder="message"></textarea>
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <span class="submit-button-container flex-center-content"> <input type="submit" value="Send">
+                        </span>
+                    </form>
+                </article>
+            </section>
+        </section>
+        <section class="flex-row ">
+            <article class="flex-column flex-center-content">
+                <header class="social-header">
+                    <h1>Connect on Social Media</h1>
+                </header>
+                <section class="social-links">
+                    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+                    <a href="https://twitter.com/KenteMalcolm">
+                        <figure class="social-icon-container"><svg version="1.1" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                xml:space="preserve" class="social-icon">
+                                <g>
+                                    <g>
+                                        <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z" />
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg></figure>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/malcolmkente/">
+                        <figure class="social-icon-container"><svg version="1.1" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                xml:space="preserve" class="social-icon">
+                                <g>
+                                    <g>
+                                        <rect y="160" width="114.496" height="352" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M426.368,164.128c-1.216-0.384-2.368-0.8-3.648-1.152c-1.536-0.352-3.072-0.64-4.64-0.896
+			c-6.08-1.216-12.736-2.08-20.544-2.08c-66.752,0-109.088,48.544-123.04,67.296V160H160v352h114.496V320
+			c0,0,86.528-120.512,123.04-32c0,79.008,0,224,0,224H512V274.464C512,221.28,475.552,176.96,426.368,164.128z" />
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <circle cx="56" cy="56" r="56" />
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg></figure>
+                    </a>
+
+                    <!-- <figure class="social-icon-container"><svg version="1.1" id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                            xml:space="preserve" class="social-icon">
+                            <g>
+                                <g>
+                                    <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+			C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+			h192c61.76,0,112,50.24,112,112V352z" />
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+			c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z" />
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <circle cx="393.6" cy="118.4" r="17.056" />
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg></figure>
+                    <figure class="social-icon-container"><svg version="1.1" id="Capa_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                            xml:space="preserve" class="social-icon">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg></figure> -->
+                </section>
+            </article>
+        </section>
+        <p class="footer-mrk-tag">reMRKable Dev &copy; 2019</p>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/portfolioSlider.js"></script>
+</body>
+
+</html>
