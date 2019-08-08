@@ -1,30 +1,20 @@
-/* Hamburger Menu Change */
-function menuChange(menu) {
-  menu.classList.toggle("change");
-}
-
-/* Active Menu Functionality */
-let mainNav = document.getElementById("js-navItems");
-let navBarToggle = document.getElementById("js-hamburgerToggle");
-
-navBarToggle.addEventListener("click", function() {
-  mainNav.classList.toggle("active-nav-items");
-});
-
-/* Sticky Navbar Functionality */
+// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
-  stickyNavbar();
+  scrollFunction();
 };
 
-let navbar = document.getElementById("js-stickyNav");
-let sticky = navbar.offsetTop;
-
-function stickyNavbar() {
-  if (window.pageYOffset > sticky) {
-    navbar.classList.add("sticky-navbar");
+function scrollFunction() {
+  if (document.body.scrollTop > 95 || document.documentElement.scrollTop > 95) {
+    document.getElementById("top-button").style.display = "block";
   } else {
-    navbar.classList.remove("sticky-navbar");
+    document.getElementById("top-button").style.display = "none";
   }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 /* Contact Form */
 let contactform = document.getElementById("contactform");

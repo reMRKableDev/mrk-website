@@ -19,25 +19,12 @@
 </head>
 
 <body class="site-container">
-    <header class="hero ">
-        <nav class="navbar" id="js-stickyNav">
-            <!--             <span class="logo"><a href="#">reMRKable Dev</a></span>
- -->
-            <div class="hamburger-container hamburger-toggle" onclick="menuChange(this)" id="js-hamburgerToggle">
-                <div class=" hamburger_row1"></div>
-                <div class="hamburger_row2"></div>
-                <div class="hamburger_row3"></div>
-            </div>
-
-            <div class="logo"><a href="#">reMRKable Dev</a></div>
-
-            <ul class="nav-items" id="js-navItems">
-                <li><a href="#home" class="nav-links" id=1>Home</a></li>
-                <li><a href="#about" class="nav-links" id=2>About</a></li>
-                <li><a href="#portfolio" class="nav-links" id=3>Portfolio</a></li>
-                <li><a href="#contact" class="nav-links" id=4>Contact</a></li>
-            </ul>
-        </nav>
+    <button onclick="topFunction()" id="top-button" title="Go to top">
+        <figure class="to-top-button-container">
+            <img src="/img/black-logo-nobg.png" alt="Top" class="to-top-button-logo">
+        </figure>
+    </button>
+    <header class="hero-image">
         <section class="flex-row header-information-container" id=home>
             <article class="flex-reverse-column flex-center-content">
                 <header class="above-fold-heading">
@@ -47,9 +34,10 @@
                     <p>Do you need help with your current project?</p>
                     <button>Get In Touch</button>
                 </header>
-                <div class="hero-logo-container">
-                    <img class="hero-logo" src="/img/white-logo-nobg.png" alt="reMRKable logo">
-                </div>
+
+                <figure class="hero-logo-container">
+                    <img src="/img//reMRKabledev-avatar.png" alt="avatar" class="hero-logo">
+                </figure>
             </article>
         </section>
     </header>
@@ -60,10 +48,6 @@
                 <header>
                     <h1>A bit about myself</h1>
                 </header>
-
-                <figure class="mrk-avatar-container">
-                    <img src="/img//reMRKabledev-avatar.png" alt="avatar" class="mrk-avatar">
-                </figure>
 
                 <ul>
                     <li>Music enthusiast and coffee lover.</li>
@@ -711,6 +695,7 @@
     </footer>
     <script src="/js/script.js"></script>
     <script src="/js/portfolioSlider.js"></script>
+    <script src="/js/testimonialSlider.js"></script>
 </body>
 
 </html>
