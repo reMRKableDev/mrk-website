@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/modal.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu">
 
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
@@ -21,22 +22,23 @@
 <body class="site-container">
     <button onclick="topFunction()" id="top-button" title="Go to top">
         <figure class="to-top-button-container">
-            <img src="/img/black-logo-nobg.png" alt="Top" class="to-top-button-logo">
+            <img src="/img/logo/black-logo-nobg.png" alt="Top" class="reMRKableDev-logo">
+            <img src="/img/misc/to-top.png" alt="Top" class="to-top-button-logo">
         </figure>
     </button>
     <header class="hero-image">
         <section class="flex-row header-information-container" id=home>
             <article class="flex-reverse-column flex-center-content">
                 <header class="above-fold-heading">
-                    <h1 class="dev-title">Full Stack Developer</h1>
-                    <p>My name is <span>Malcolm R. Kente</span>.</p>
-                    <p>I create everything from websites to rich interactive web apps.</p>
-                    <p>Do you need help with your current project?</p>
-                    <button>Get In Touch</button>
+                    <h1 class="dev-title">Hi there!</h1>
+                    <p>My name is <span><a href="#about"> Malcolm R. Kente</a></span> and I create - enhance
+                        digital identities with code </p>
+                    <button><a href="#contact"> Get In Touch</a></button>
+                    <a href="#about" class="scroll_icon"></a>
                 </header>
 
                 <figure class="hero-logo-container">
-                    <img src="/img//reMRKabledev-avatar.png" alt="avatar" class="hero-logo">
+                    <img src="/img/misc/reMRKabledev-avatar.png" alt="avatar" class="hero-logo">
                 </figure>
             </article>
         </section>
@@ -48,15 +50,9 @@
                 <header>
                     <h1>A bit about myself</h1>
                 </header>
-
-                <ul>
-                    <li>Music enthusiast and coffee lover.</li>
-                    <li>Done remote work for divers businesses.</li>
-                    <li>Experienced in team-oriented environments.</li>
-                </ul>
             </article>
             <section class="flex-row flex-center-content">
-                <article class="skillset-container flex-column">
+                <article class="skillset-container flex-column flex-center-content">
                     <header class="skill-header-container flex-center-content">
                         <h2>Frontend</h2>
                         <figure class="skill-icon-container">
@@ -82,20 +78,11 @@
                         </figure>
                     </header>
 
-                    <p>I enjoy coding from scratch and bringing ideas to life in the browser.</p>
+                    <p>I enjoy coding from scratch and bringing ideas to life in the browser</p>
 
-                    <h3>What I Know</h3>
-
-                    <ul>
-                        <li>Html & Css</li>
-                        <li>JavaScript</li>
-                        <li>SaSS / SCSS</li>
-                        <li>React.js</li>
-                        <li>jQuery</li>
-                        <li>EJS</li>
-                    </ul>
+                    <button class="modal-trigger">What I Know</button>
                 </article>
-                <article class="skillset-container flex-column">
+                <article class="skillset-container flex-column flex-center-content">
                     <header class="skill-header-container flex-center-content">
                         <h2>Backend</h2>
                         <figure class="skill-icon-container">
@@ -125,20 +112,21 @@
                         </figure>
                     </header>
 
-                    <p>I value creating solid, secure, and functional logic for web applications.</p>
+                    <p>I value creating secure and functional logic for web applications</p>
 
-                    <h3>What I Know</h3>
-
-                    <ul>
+                    <button class="modal-trigger">What I Know</button>
+                    <!--                     <h3>What I Know</h3>
+ -->
+                    <!-- <ul>
                         <li>APIs</li>
                         <li>Node.js</li>
                         <li>Testing</li>
                         <li>Express.js</li>
                         <li>Restful Routing</li>
                         <li>Relational Databases: SQL</li>
-                    </ul>
+                    </ul> -->
                 </article>
-                <article class="skillset-container flex-column">
+                <article class="skillset-container flex-column flex-center-content">
                     <header class="skill-header-container flex-center-content">
                         <h2>Additional</h2>
                         <figure class="skill-icon-container">
@@ -230,35 +218,64 @@
                         </figure>
                     </header>
 
-                    <p>I appreciate improving and enhancing digital identities with proper tools.</p>
+                    <p>I care about helping and improving digital communication</p>
 
-                    <h3>What I Know</h3>
-
-                    <ul>
+                    <button class="modal-trigger">What I Know</button>
+                    <!--                     <h3>What I Know</h3>
+ -->
+                    <!-- <ul>
                         <li>Wordpress Development</li>
                         <li>Project Management</li>
                         <li>SEO Optimization</li>
                         <li>Scrum (Agile)</li>
                         <li>Coaching</li>
                         <li>Git</li>
-                    </ul>
+                    </ul> -->
                 </article>
             </section>
         </section>
         <section class="portfolio flex-row" id=portfolio>
             <article class="flex-column">
                 <header>
-                    <h1>Projects I've done</h1>
+                    <h1>Things I've worked on</h1>
                 </header>
 
-                <ul>
-                    <li>I've worked on various projects.</li>
-                    <li>Creating functional software solutions.</li>
-                    <li>Enhancing online presence & improving digitial communication.</li>
-                </ul>
+                <!-- <ul>
+                    <li>Business websites.</li>
+                    <li>Node and React web apps.</li>
+                    <li>Developer training and coaching.</li>
+                </ul> -->
             </article>
             <section class="flex-row">
                 <section class="portfolio-scrolling-wrapper">
+                    <article class="card">
+                        <header>
+                            <figure>
+                                <img src="/img/projects/bssa-mockup.png" alt="bssa">
+                                <figcaption>
+                                    <h2>BSSA Full Stack Web Development</h2>
+                                </figcaption>
+                            </figure>
+                        </header>
+                        <p> Instructor / Coach for web development bootcamp. </p>
+                        <a href="http://bssa.nu/an-expert-on-chinese-culture-becomes-a-programmer-at-b-startup-school-amsterdam/"
+                            target="_blank" class="flex-center-content"><button>View
+                                Project</button></a>
+                    </article>
+                    <article class="card">
+                        <header>
+                            <figure>
+                                <img src="/img/projects/sahlinfast-mockup.png" alt="portfolio">
+                                <figcaption>
+                                    <h2>Sahlin Fastigheter AB</h2>
+                                </figcaption>
+                            </figure>
+                        </header>
+                        <p>A real estate website for Sahlin Fastigheter AB based in Sweden.</p>
+                        <a href="https://www.sahlinfastigheterab.se/" target="_blank"
+                            class="flex-center-content"><button>View
+                                Project</button></a>
+                    </article>
                     <article class="card">
                         <header>
                             <figure>
@@ -269,7 +286,9 @@
                             </figure>
                         </header>
                         <p>An online platform for dance specific training dedicated to dancers.</p>
-                        <a href="#" class="flex-center-content"><button>View Project</button></a>
+                        <a href="https://www.befitandsensual.com/" target="_blank"
+                            class="flex-center-content"><button>View
+                                Project</button></a>
                     </article>
                     <article class="card">
                         <header>
@@ -282,7 +301,8 @@
                         </header>
                         <p>A portfolio website that features the workshop services provided by ProjektDirekt.
                         </p>
-                        <a href="#" class="flex-center-content"><button>View Project</button></a>
+                        <a href="https://projektdirekt.se/" target="_blank" class="flex-center-content"><button>View
+                                Project</button></a>
                     </article>
                     <article class="card">
                         <header>
@@ -295,7 +315,8 @@
                         </header>
                         <p>A portfolio website for the dance group Fuse Fam from Gothenburg, Sweden.
                         </p>
-                        <a href="#" class="flex-center-content"><button>View Project</button></a>
+                        <a href="https://www.fusefam.com/" target="_blank" class="flex-center-content"><button>View
+                                Project</button></a>
                     </article>
                     <article class="card">
                         <header>
@@ -307,13 +328,29 @@
                             </figure>
                         </header>
                         <p> A roadmap of the required skills needed for a full-stack developer. </p>
-                        <a href="#" class="flex-center-content"><button>View Project</button></a>
+                        <a href="https://fullstack-roadmap.herokuapp.com/" target="_blank"
+                            class="flex-center-content"><button>View
+                                Project</button></a>
                     </article>
+                </section>
+                <section class="flex-row flex-center-content">
+                    <figure class="projects-icon-container">
+                        <svg height="512pt" viewBox="0 -149 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"
+                            class="projects-horizontal-scroll-icon">
+                            <path
+                                d="m320 106.449219c0 35.347656-28.652344 64-64 64s-64-28.652344-64-64c0-35.347657 28.652344-64 64-64s64 28.652343 64 64zm0 0" />
+                            <path
+                                d="m504.085938 89.679688-106.667969-85.332032c-.574219-.46875-1.214844-.894531-1.832031-1.28125-14.65625-8.660156-32.917969 2.242188-32.917969 18.050782v170.664062c0 11.757812 9.578125 21.335938 21.332031 21.335938 4.03125 0 7.828125-1.066407 11.5625-3.285157.640625-.386719 1.257812-.8125 1.835938-1.28125l108.03125-86.570312c4.246093-4.265625 6.570312-9.769531 6.570312-15.53125s-2.324219-11.265625-7.914062-16.769531zm0 0" />
+                            <path
+                                d="m116.4375 3.066406c-.640625.386719-1.257812.8125-1.835938 1.28125l-108.03125 86.570313c-4.246093 4.265625-6.570312 9.769531-6.570312 15.53125s2.324219 11.265625 7.914062 16.769531l106.667969 85.332031c.574219.46875 1.214844.894531 1.832031 1.28125 3.757813 2.21875 7.554688 3.285157 11.585938 3.285157 11.753906 0 21.332031-9.578126 21.332031-21.335938v-170.664062c0-15.808594-18.238281-26.730469-32.894531-18.050782zm0 0" />
+                        </svg>
+                    </figure>
+                    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div> -->
                 </section>
                 <section class="more-projects-container flex-center-content">
                     <a href="https://github.com/reMRKableDev">
                         <p>Check out more projects on GitHub</p>
-                        <figure class="github-icon-container "> <svg version="1.1" id="Capa_1"
+                        <figure class="projects-icon-container"> <svg version="1.1" id="Capa_1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                 y="0px" viewBox="0 0 536.11 536.11" style="enable-background:new 0 0 536.11 536.11;"
                                 xml:space="preserve" class="github-icon">
@@ -422,7 +459,7 @@
                         <section class="quote">
                             <span><strong>Sebastian Kruse,</strong> BeFit And Sensual</span>
                             <figure>
-                                <img src="/img/seb-kruse.png" alt="Sebastian">
+                                <img src="/img/testimonials/seb-kruse.png" alt="Sebastian">
                             </figure>
                         </section>
                     </blockquote>
@@ -437,7 +474,7 @@
                         <section class="quote flex-center-content">
                             <span><strong>Therese Sahlin,</strong> Fuse Fam Dance Crew</span>
                             <figure>
-                                <img src="/img/therese-sahlin.png" alt="Therese">
+                                <img src="/img/testimonials/therese-sahlin.png" alt="Therese">
                             </figure>
                         </section>
                     </blockquote>
@@ -452,7 +489,7 @@
                         <section class="quote">
                             <span><strong>Mats Eriksson,</strong> ProjektDirekt AB</span>
                             <figure>
-                                <img src="/img/mats-eriksson.png" alt="Mats">
+                                <img src="/img/testimonials/mats-eriksson.png" alt="Mats">
                             </figure>
                         </section>
                     </blockquote>
@@ -693,9 +730,17 @@
         </section>
         <p class="footer-mrk-tag">reMRKable Dev &copy; 2019</p>
     </footer>
+
+    <div class="flex align-center align-vert modal modal--align">
+        <div class="modal__container">
+            <a class="modal__close modal__close--x" aria-hidden="true">&#x2715;</a>
+            <div id="modal-text" class="modal-skillset"></div>
+        </div>
+    </div>
     <script src="/js/script.js"></script>
     <script src="/js/portfolioSlider.js"></script>
-    <script src="/js/testimonialSlider.js"></script>
+    <script src="/js/modal.js"></script>
+
 </body>
 
 </html>
