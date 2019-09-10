@@ -86,9 +86,9 @@ p {
       from(hsla(0, 0%, 0%, 0.8)),
       to(rgba(0, 0, 0, 0.8))
     ),
-    url("../img/bg/hero.JPG");
+    url("../img/bg/hero.png");
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../img/bg/hero.JPG");
+    url("../img/bg/hero.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -120,12 +120,10 @@ p {
 }
 
 .hero-logo {
-  background-color: #fff;
-  width: 12.5em;
+  width: 10em;
   height: auto;
-  border: 1px solid #333;
-  border-radius: 50%;
-  padding: 10px 5px 0 10px;
+  padding: 5px;
+  background-color: #fff;
 }
 
 #top-button {
@@ -421,9 +419,9 @@ p {
       from(hsla(0, 0%, 0%, 0.8)),
       to(rgba(0, 0, 0, 0.8))
     ),
-    url("../img/bg/working.JPG");
+    url("../img/bg/working.png");
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../img/bg/working.JPG");
+    url("../img/bg/working.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
