@@ -521,10 +521,6 @@ p {
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  /*   box-shadow: 0 4px #333;
- */
-  /*   box-shadow: 0 10px 6px -6px #333;
- */
 }
 
 .card button:hover,
