@@ -469,9 +469,9 @@ p {
       from(hsla(0, 0%, 0%, 0.8)),
       to(rgba(0, 0, 0, 0.8))
     ),
-    url("img/bg/working.jpg");
+    url("../img/bg/working.jpg");
   background-image: linear-gradient(hsla(0, 0%, 0%, 0.8), rgba(0, 0, 0, 0.8)),
-    url("img/bg/working.jpg");
+    url("../img/bg/working.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
