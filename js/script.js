@@ -1,5 +1,5 @@
 // When the user scrolls down 20px from the top of the document, show the button
-/* window.onscroll = function() {
+window.onscroll = function() {
   scrollFunction();
 };
 
@@ -9,13 +9,13 @@ function scrollFunction() {
   } else {
     document.getElementById("top-button").style.display = "none";
   }
-} */
+}
 
 // When the user clicks on the button, scroll to the top of the document
-/* function topFunction() {
+function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-} */
+}
 /* Contact Form */
 let contactform = document.getElementById("contactform");
 contactform.setAttribute(
