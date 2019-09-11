@@ -79,14 +79,16 @@ p {
 
 /* Header/Hero */
 .hero-image {
-  background-image: /* -webkit-gradient(
+  background-image: -webkit-gradient(
       linear,
       left top,
       left bottom,
       from(hsla(0, 0%, 0%, 0.8)),
       to(rgba(0, 0, 0, 0.8))
-    ), */ url("../img/bg/hero.png");
-  background-image: /* linear-gradient(hsla(0, 0%, 0%, 0.8), rgba(0, 0, 0, 0.8)), */ url("../img/bg/hero.png");
+    ),
+    url("../img/bg/hero.png");
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/bg/hero.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
