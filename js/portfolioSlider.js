@@ -26,12 +26,12 @@
 
 var win = $(window);
 
-var allMods = $(".skillset-container");
+var allMods = $(".skillset_container");
 
 allMods.each(function(i, el) {
   var el = $(el);
   if (el.visible(true)) {
-    el.addClass("already-visible");
+    el.addClass("already_visible");
   }
 });
 
@@ -39,7 +39,7 @@ win.scroll(function(event) {
   allMods.each(function(i, el) {
     var el = $(el);
     if (el.visible(true)) {
-      el.addClass("come-in");
+      el.addClass("come_in");
     }
   });
 });
