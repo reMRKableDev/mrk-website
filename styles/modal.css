@@ -1,21 +1,28 @@
-/* demo only */
+/* popup */
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .align_center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .align_vert,
 .align_vert.align_center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
-/* end demo */
 
 .modal {
   display: none;
 }
 .modal__show,
 .modal__hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 } /* classes fired by js for animation control */
 
@@ -57,7 +64,17 @@
 /* Animations */
 /* Open */
 .modal.modal__show {
+  -webkit-animation: modal_open 0.3s;
   animation: modal_open 0.3s;
+}
+
+@-webkit-keyframes modal_open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes modal_open {
@@ -71,7 +88,17 @@
 
 /* Close */
 .modal.modal__hide {
+  -webkit-animation: modal_close 0.3s;
   animation: modal_close 0.3s;
+}
+
+@-webkit-keyframes modal_close {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes modal_close {

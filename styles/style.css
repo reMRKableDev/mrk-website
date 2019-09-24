@@ -33,7 +33,7 @@ p {
 }
 
 /* SITE LAYOUT */
-.site-container {
+.site_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +44,7 @@ p {
   flex-direction: column;
 }
 
-.site-content {
+.site_content {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -93,6 +93,58 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.privacy_policy,
+.cookies_policy,
+.terms_service {
+  margin: 1em;
+  line-height: 1.5em;
+  color: #555;
+}
+
+.privacy_policy a,
+.cookies_policy a,
+.terms_service a {
+  text-decoration: none;
+  color: #6dd6d6;
+}
+
+.privacy_policy a:hover,
+.cookies_policy a:hover,
+.terms_service a:hover {
+  text-decoration: underline;
+}
+
+.privacy_policy a:visited,
+.cookies_policy a:visited,
+.terms_service a:visited {
+  text-decoration: none;
+}
+
+.privacy_policy strong,
+.cookies_policy strong,
+.terms_service strong {
+  color: #333;
+}
+
+.privacy_policy h3,
+.cookies_policy h3,
+.terms_service h3 {
+  color: #222;
+}
+
+.privacy_policy h4,
+.cookies_policy h4 {
+  color: #333;
+}
+
+.privacy_policy h3,
+.privacy_policy h4,
+.cookies_policy h3,
+.cookies_policy h4,
+.terms_service h3 {
+  margin: 1em 0;
 }
 
 /* HEADER / HERO SECTION */
@@ -793,13 +845,6 @@ footer {
 }
 
 /* SOCIAL MEDIA SECTION STYLES */
-.social_media header {
-  font-size: 1.2em;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #6dd6d6;
-  text-decoration-color: #6dd6d6;
-}
-
 .social_media section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,6 +884,22 @@ footer {
   margin: 0;
   fill: #6dd6d6;
   text-align: center;
+}
+
+.legalities a {
+  text-decoration: none;
+  color: #fffff0;
+  margin: 0.2em;
+  font-size: 0.9em;
+}
+
+.legalities a:visited {
+  text-decoration: none;
+}
+
+.legalities a:hover {
+  text-decoration: underline;
+  text-decoration-color: #6dd6d6;
 }
 
 .footer_tag {
