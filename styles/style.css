@@ -542,7 +542,8 @@ p {
 }
 
 .portfolio_scrolling_icon figure,
-.portfolio_github_container a figure {
+.portfolio_github_container a figure,
+.skills_linkedin_container a figure {
   width: 3.125em;
   height: 3.125em;
 }
@@ -554,13 +555,19 @@ p {
   fill: #222;
 }
 
-.portfolio_github_container {
+.portfolio_github_container,
+.skills_linkedin_container {
   width: 100%;
   background-color: #6dd6d6;
   padding: 1em;
 }
 
-.portfolio_github_container a {
+.skills_linkedin_container {
+  margin-top: 1.5em;
+}
+
+.portfolio_github_container a,
+.skills_linkedin_container a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,26 +584,47 @@ p {
   color: #fffff0;
 }
 
-.portfolio_github_container a:hover {
+.portfolio_github_container a:hover,
+.skills_linkedin_container a:hover {
   text-decoration: underline;
 }
 
-.portfolio_github_container a p {
+.portfolio_github_container a p,
+.skills_linkedin_container a p {
   text-transform: uppercase;
 }
 
-.portfolio_github_container a figure {
+.portfolio_github_container a figure,
+.skills_linkedin_container a figure {
   width: 3.125em;
   height: 3.125em;
+}
+
+.skills_linkedin_container a figure {
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 0.313em;
+}
+.portfolio_github_container a figure {
   padding: 0.313em;
 }
 
-.portfolio_github_container a figure svg {
+.skills_linkedin_container a figure {
+  padding: 0.5em;
+  border: 2px solid #fffff0;
+  border-radius: 50%;
+}
+
+.portfolio_github_container a figure svg,
+.skills_linkedin_container a figure svg {
   width: 100%;
   height: auto;
   fill: #fffff0;
   -webkit-box-shadow: 1px 1px 5px 0px #6dd6d6;
   box-shadow: 1px 1px 5px 0px #6dd6d6;
+}
+
+.portfolio_github_container a figure svg {
   border-radius: 50%;
 }
 
@@ -951,7 +979,8 @@ footer {
     font-size: 1.5em;
   }
   .portfolio_github_container a p,
-  .portfolio_scrolling_wrapper article header figure figcaption h2 {
+  .portfolio_scrolling_wrapper article header figure figcaption h2,
+  .skills_linkedin_container a p {
     font-size: 1.2em;
   }
 }
@@ -977,7 +1006,8 @@ footer {
   }
 
   .portfolio_scrolling_wrapper article header figure figcaption h2,
-  .portfolio_github_container a p {
+  .portfolio_github_container a p,
+  .skills_linkedin_container a p {
     font-size: 1.5em;
   }
 
