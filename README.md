@@ -1,6 +1,6 @@
 # reMRKable Dev website 🚀🚀🚀
 
-[![CodeFactor](https://www.codefactor.io/repository/github/remrkabledev/mrk-website/badge)](https://www.codefactor.io/repository/github/remrkabledev/mrk-website)
+![CSS Workflow](https://github.com/reMRKableDev/mrk-website/workflows/CSS%20Workflow/badge.svg) [![CodeFactor](https://www.codefactor.io/repository/github/remrkabledev/mrk-website/badge)](https://www.codefactor.io/repository/github/remrkabledev/mrk-website)
 
 Portfolio website for reMRKable Dev
 
