@@ -1,6 +1,10 @@
 # reMRKable Dev website
 
-My portfolio website.
+[![CodeFactor](https://www.codefactor.io/repository/github/remrkabledev/mrk-website/badge)](https://www.codefactor.io/repository/github/remrkabledev/mrk-website)
+
+Portfolio website for reMRKable Dev
+
+![remrkable-gif](remrkable.gif)
 
 Built with:
 
