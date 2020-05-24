@@ -342,11 +342,6 @@ p {
   margin-bottom: 1.5em;
 }
 
-.skillset_container header,
-.modal_skillset ul li {
-  text-transform: uppercase;
-}
-
 .skillset_container header figure {
   width: 5em;
   height: 5em;
@@ -461,9 +456,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.portfolio_scrolling_wrapper {
   width: 100%;
   -webkit-overflow-scrolling: touch;
 }
@@ -493,7 +485,6 @@ p {
   margin-bottom: 0.313em;
   color: #222;
   width: 100%;
-  margin: 0;
 }
 
 .portfolio_scrolling_wrapper article header figure {
@@ -604,15 +595,12 @@ p {
   width: 2.5em;
   height: 2.5em;
   margin-left: 0.313em;
-}
-.portfolio_github_container a figure {
-  padding: 0.313em;
-}
-
-.skills_linkedin_container a figure {
   padding: 0.5em;
   border: 2px solid #fffff0;
   border-radius: 50%;
+}
+.portfolio_github_container a figure {
+  padding: 0.313em;
 }
 
 .portfolio_github_container a figure svg,
