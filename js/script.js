@@ -1,6 +1,6 @@
 /* Contact Form */
-let contactform = document.getElementById("contactform");
-contactform.setAttribute(
+let contactForm = document.getElementById("contactform");
+contactForm.setAttribute(
   "action",
   "//formspree.io/" + "malcolm.kente" + "@" + "reMRKabledev" + "." + "com"
 );

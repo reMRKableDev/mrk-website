@@ -186,7 +186,7 @@ p {
   width: 100%;
   height: 100%;
   padding: 0;
-  margin: 0.3em 0 0.6em 0;
+  margin: 0.3em 0 0.6em;
   text-align: center;
 }
 
@@ -241,34 +241,15 @@ p {
   color: #fffff0;
   outline: none;
   border: 0.063em solid #6dd6d6;
-  /* opacity: 0.9; */
   border-radius: 1em;
   cursor: pointer;
-  margin: 0.6em 0 0.3em 0;
-  /*   -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  -webkit-animation: bounce 2.5s infinite alternate;
-  animation: bounce 2.5s infinite alternate;
-  -webkit-box-shadow: 0 8px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 8px rgba(0, 0, 0, 0.8); */
+  margin: 0.6em 0 0.3em;
 }
 
 .header_information_container header button a {
   text-decoration: none;
   color: inherit;
 }
-
-/* CTA BUTTON */
-/* .header_information_container header button:hover {
-  opacity: 1;
-}
-
-.header_information_container header button:active {
-  -webkit-box-shadow: 0 4px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 4px rgba(0, 0, 0, 0.8);
-  -webkit-transform: translateY(3px);
-  transform: translateY(3px);
-} */
 
 /* BOUNCE ANIMATION*/
 @-webkit-keyframes bounce {
@@ -342,18 +323,13 @@ p {
   margin-bottom: 1.5em;
 }
 
-.skillset_container header,
-.modal_skillset ul li {
-  text-transform: uppercase;
-}
-
 .skillset_container header figure {
   width: 5em;
   height: 5em;
   margin-bottom: 1em;
   border: 0.125em solid #6dd6d6;
-  -webkit-box-shadow: 0.063em 0.063em 0.313em 0px #6dd6d6;
-  box-shadow: 0.063em 0.063em 0.313em 0px #6dd6d6;
+  -webkit-box-shadow: 0.063em 0.063em 0.313em 0 #6dd6d6;
+  box-shadow: 0.063em 0.063em 0.313em 0 #6dd6d6;
   border-radius: 50%;
   padding: 0.938em;
   text-align: center;
@@ -461,9 +437,6 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.portfolio_scrolling_wrapper {
   width: 100%;
   -webkit-overflow-scrolling: touch;
 }
@@ -493,7 +466,6 @@ p {
   margin-bottom: 0.313em;
   color: #222;
   width: 100%;
-  margin: 0;
 }
 
 .portfolio_scrolling_wrapper article header figure {
@@ -604,15 +576,12 @@ p {
   width: 2.5em;
   height: 2.5em;
   margin-left: 0.313em;
-}
-.portfolio_github_container a figure {
-  padding: 0.313em;
-}
-
-.skills_linkedin_container a figure {
   padding: 0.5em;
   border: 2px solid #fffff0;
   border-radius: 50%;
+}
+.portfolio_github_container a figure {
+  padding: 0.313em;
 }
 
 .portfolio_github_container a figure svg,
@@ -620,8 +589,8 @@ p {
   width: 100%;
   height: auto;
   fill: #fffff0;
-  -webkit-box-shadow: 1px 1px 5px 0px #6dd6d6;
-  box-shadow: 1px 1px 5px 0px #6dd6d6;
+  -webkit-box-shadow: 1px 1px 5px 0 #6dd6d6;
+  box-shadow: 1px 1px 5px 0 #6dd6d6;
 }
 
 .portfolio_github_container a figure svg {
@@ -839,7 +808,6 @@ footer {
 
 .contact_form_group input[type="submit"] {
   background: none;
-  border: none;
   cursor: pointer;
   outline: none;
   font-family: "Ubuntu", sans-serif;
@@ -848,7 +816,7 @@ footer {
   text-transform: uppercase;
   width: 80%;
   padding: 0.5em;
-  margin: 1em 0 0 0;
+  margin: 1em 0 0;
   background-color: #fffff0;
   color: #6dd6d6;
   border: 1px solid #fffff0;
@@ -888,8 +856,8 @@ footer {
   width: 50px;
   height: 50px;
   border: 2px solid #6dd6d6;
-  -webkit-box-shadow: 1px 1px 5px 0px #6dd6d6;
-  box-shadow: 1px 1px 5px 0px #6dd6d6;
+  -webkit-box-shadow: 1px 1px 5px 0 #6dd6d6;
+  box-shadow: 1px 1px 5px 0 #6dd6d6;
   border-radius: 50%;
   padding: 10px;
   text-align: center;

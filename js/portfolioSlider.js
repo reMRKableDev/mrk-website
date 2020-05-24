@@ -1,16 +1,5 @@
-(function($) {
-  /**
-   * Copyright 2012, Digital Fusion
-   * Licensed under the MIT license.
-   * http://teamdf.com/jquery-plugins/license/
-   *
-   * @author Sam Sehnert
-   * @desc A small plugin that checks whether elements are within
-   *     the user visible viewport of a web browser.
-   *     only accounts for vertical position, not horizontal.
-   */
-
-  $.fn.visible = function(partial) {
+(function ($) {
+  $.fn.visible = function (partial) {
     var $t = $(this),
       $w = $(window),
       viewTop = $w.scrollTop(),
@@ -28,15 +17,15 @@ var win = $(window);
 
 var allMods = $(".skillset_container");
 
-allMods.each(function(i, el) {
+allMods.each(function (i, el) {
   var el = $(el);
   if (el.visible(true)) {
     el.addClass("already_visible");
   }
 });
 
-win.scroll(function(event) {
-  allMods.each(function(i, el) {
+win.scroll(function () {
+  allMods.each(function (i, el) {
     var el = $(el);
     if (el.visible(true)) {
       el.addClass("come_in");
