@@ -493,6 +493,12 @@ p {
   margin: 0.313em 0;
 }
 
+.portfolio_scrolling_wrapper article header p {
+  font-size: 0.7em;
+  background-color: #222;
+  color: #fff;
+}
+
 .portfolio_scrolling_wrapper article p {
   margin: 0.313em 0;
   padding: 0.313em;
